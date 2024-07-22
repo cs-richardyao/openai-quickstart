@@ -4,8 +4,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 
-os.environ["OPENAI_API_BASE"] = "https://aigptx.top/v1"
-os.environ["OPENAI_API_KEY"] = "sk-hFVEtXdOCaB6DF955908T3BlbKFJ17ce4e69d6ed4fc58540"
+
 with open("container_agent.txt", encoding='utf8', errors="ignore") as f:
     container_agent = f.read()
 text_splitter = CharacterTextSplitter(
